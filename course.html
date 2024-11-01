@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Course</title>
+    <link
+      rel="icon"
+      href="https://cdn.dribbble.com/users/5506879/screenshots/17109874/media/8cbeecd2078eb110348a4270d365e726.png?resize=400x0"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Genos:ital,wght@1,600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Genos", sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+
+      .header {
+        background-color: darkgrey;
+        position: sticky;
+        z-index: 1;
+        top: 0;
+      }
+
+      header {
+        display: inline-flex;
+        margin: 0;
+      }
+      header>h1>a{
+    text-decoration: none;
+}
+      nav {
+        position: sticky;
+        display: inline-flex;
+        position: relative;
+        left: 1040px;
+        bottom: -15px;
+      }
+      a {
+        color: black;
+        display: inline-flex;
+      }
+      .search {
+        position: relative;
+        left: 670px;
+      }
+      h1 {
+        position: relative;
+        left: 25px;
+      }
+      .line1 {
+        border: solid 2px black;
+        color: ghostwhite;
+      }
+
+      .line2 {
+        display: inline-flex;
+      }
+      .line2 > ul > a:hover {
+        color: rgb(89, 89, 90);
+      }
+      nav > ul > a:hover {
+        color: rgb(89, 89, 90);
+      }
+      .list > ul > a:hover {
+        color: rgb(89, 89, 90);
+      }
+      .search > ul > a:hover {
+        color: rgb(89, 89, 90);
+      }
+      .hero {
+        background-image: url("https://t4.ftcdn.net/jpg/03/98/45/23/360_F_398452372_dhh1fXfIZ7GYPJnQRwCl6IGY1sn53AUX.jpg");
+        background-size: cover;
+        background-position: center;
+        height: 500px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: black;
+        margin-bottom: 20px;
+        position: relative;
+      }
+
+      .hero h1 {
+        font-size: 3em;
+        margin-bottom: 20px;
+      }
+
+      .hero p {
+        font-size: 1.2em;
+        color: black;
+        max-width: 600px;
+        margin: 0 auto;
+      }
+
+      .content {
+        padding: 20px;
+        margin: 0 auto;
+        max-width: 800px;
+      }
+
+      .section-title {
+        text-align: center;
+        margin-bottom: 40px;
+      }
+
+      .card {
+        background-color: #fff;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        padding: 20px;
+        margin-bottom: 20px;
+        transition: transform 0.3s ease;
+        border: 2px solid black;
+      }
+
+      .card:hover {
+        transform: translateY(-5px);
+      }
+
+      .card img {
+        width: 100%;
+        border-radius: 6px;
+        margin-bottom: 10px;
+        border: 2px solid black;
+      }
+      .card > a:hover {
+        color: black;
+      }
+      .list {
+        display: inline-flex;
+        position: relative;
+        left: 450px;
+      }
+
+      .box10 {
+        text-align: center;
+      }
+      .underline {
+        border: 2px solid gray;
+      }
+      footer {
+        padding: 0px 8px;
+      }
+      .intro{
+        padding: 10px;
+      }
+      .intro3{
+        padding: 2px;
+      }
+      /* footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        footer p {
+            margin: 0;
+        } */
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <header>
+        <h1><a href="index.html">< / > CodeWithHunter</a></h1>
+        <nav>
+          <ul>
+            <a href="login.html">Login</a>
+          </ul>
+          <ul>
+            <a href="signup.html">Sign up</a>
+          </ul>
+        </nav>
+      </header>
+      <div class="line1"></div>
+      <div class="line2">
+        <ul>
+          <a href="index.html">Home</a>
+        </ul>
+        <ul>
+          <a href="profile.html">Profile</a>
+        </ul>
+        <ul>
+          <a href="course.html">Course</a>
+        </ul>
+        <ul>
+          <a href="notes.html">NOTES</a>
+        </ul>
+        <ul>
+          <a href="product.html">Product</a>
+        </ul>
+        <ul>
+          <a href="features.html">Features</a>
+        </ul>
+        <ul>
+          <a href="contact.html">Contact</a>
+        </ul>
+        <ul>
+          <a href="about.html">ABOUT</a>
+        </ul>
+        <div class="search">
+          <ul>
+            <a href="https://www.google.com">SEARCH</a>
+          </ul>
+        </div>
+      </div>
+      <div class="line1"></div>
+    </div>
+    <section class="hero">
+      <div>
+        <h1>Welcome to CodeWithHunter</h1>
+        <p>
+          The multiple courses are available in this platform from beginner to
+          advanced level.
+        </p>
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3-aSExQp1DzP0glM8UHYp6vF2eJ1KPIOBKzLzYkKubg&s" height="300"
+          alt=""
+        />
+      </div>
+    </section>
+
+    <section class="content">
+      <div class="section-title">
+        <h1><u>Our Courses</u></h1>
+      </div>
+      <div class="card">
+        <img
+          src="https://media.istockphoto.com/id/1294521676/photo/programming-code-abstract-technology-background-of-software-developer-and-computer-script.jpg?s=612x612&w=0&k=20&c=ObKkw6vEup1ZrDsZicFui5n5H5TPLEBUC-t5xteMoow="
+          alt="Service 1"
+        />
+        <a href="#"> <h3>Course 1 - Programming Languages</h3></a>
+        <p>
+          Here we learn about programming languages from scratch to advance.....
+        </p>
+      </div>
+    </section>
+    <div class="intro">
+      <h2><u>Programming Languages</u></h2>
+      <p>
+        Welcome to the exciting world of programming languages! In this course,
+        we will embark on a journey through the fundamental concepts, paradigms,
+        and structures that underpin the diverse landscape of programming
+        languages. Whether you're a novice enthusiast or an experienced coder,
+        this course aims to provide a comprehensive understanding of how
+        programming languages work and how to effectively utilize them to solve
+        real-world problems.
+      </p>
+      <h3><u>Course Overview:</u></h3>
+      <p>In this course, we will cover a range of topics including:</p>
+      <p>
+        1. Foundations of Programming Languages: We will start by delving into the
+        basic building blocks of programming languages, including syntax,
+        semantics, and data types. Understanding these core concepts will
+        provide a solid groundwork for exploring more advanced topics.
+      </p>
+      <p>
+        2. Programming Paradigms: From procedural and object-oriented to functional
+        and declarative, programming paradigms form the philosophical and
+        structural basis of programming languages. We will examine each
+        paradigm's principles, strengths, and weaknesses, empowering you to
+        choose the most suitable approach for different tasks.
+      </p>
+      <p>
+        3. Language Design and Implementation: Ever wondered how programming
+        languages are designed and implemented? In this section, we will explore
+        the intricacies of language design, including syntax design, parsing,
+        and compiler construction. By the end, you'll have a deeper appreciation
+        for the inner workings of your favorite programming languages.
+      </p>
+      <p>
+        4. Concurrency and Parallelism: As computing systems become increasingly parallel and distributed, understanding concurrency and parallelism is essential for developing efficient and scalable software. We will study various concurrency models and techniques for managing parallel execution, equipping you with the tools to tackle complex, concurrent problems.
+      </p>
+      <p>
+        5. Domain-Specific Languages (DSLs): DSLs are specialized languages tailored to specific problem domains, offering expressive power and simplicity for targeted tasks. We will examine the benefits of DSLs and explore practical examples across different domains, from finance to scientific computing.
+      </p>
+      <p>
+        6. Emerging Trends and Future Directions: Finally, we will discuss emerging trends and future directions in programming languages, from domain-specific languages to quantum computing languages. By staying abreast of the latest developments, you'll be well-prepared to navigate the ever-evolving landscape of programming languages.
+      </p>
+      <h3><u>Course Objectives:</u></h3>
+      <p>
+        By the end of this course, you will:
+      </p>
+      <p>
+        <li>Gain a comprehensive understanding of programming language concepts, paradigms, and structures.</li>
+      </p>
+      <p>
+        <li>Develop the ability to critically analyze and compare different programming languages based on their design principles and features.</li>
+      </p>
+      <p>
+        <li>Acquire practical skills in designing, implementing, and utilizing programming languages to solve real-world problems.</li>
+      </p>
+      <p>
+        <li>Explore advanced topics such as concurrency, parallelism, and domain-specific languages, enabling you to tackle complex computational challenges with confidence.</li>
+      </p>
+      <p>
+        <li>Stay informed about emerging trends and future directions in programming languages, preparing you to adapt to the evolving needs of the software industry.</li>
+      </p>
+      <h3><u>Prerequisites:</u></h3>
+      <p>
+        This course assumes a basic familiarity with programming concepts and techniques. While prior experience with a programming language is helpful, it is not required. A curious mind and a passion for learning are the most important prerequisites for success in this course.
+      </p>
+      <h3><u>Conclusion:</u></h3>
+      <p>
+        Programming languages are powerful tools that shape the way we interact with computers and solve problems. Whether you aspire to become a software engineer, a data scientist, or a technology enthusiast, understanding programming languages is essential for success in today's digital world. We invite you to join us on this enriching journey as we explore the fascinating world of programming languages together. Let's dive in and unlock the endless possibilities that await us!
+      </p>
+    </div>
+    <section class="content">
+      <div class="card">
+        <img
+        src=https://images.unsplash.com/photo-1618329027137-a520b57c6606?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fHZpZGVvJTIwZWRpdGluZ3xlbnwwfHwwfHx8MA%3D%3D"
+        alt="Service 2">
+        <a href="#"><h3>Course 2 - Photography & Video Editing</h3></a>
+        <p>
+          Here we learn about photography and video editing and many more on
+          content creation.....
+        </p>
+      </div>
+    </div>
+  </section>
+  <div class="intro">
+   <h2><u>Photography and Video Editing</u></h2>
+    <p>
+      Welcome to the captivating realm of photography and video editing! In this course, we will embark on an exhilarating journey through the art and science of capturing stunning visuals and bringing them to life through the magic of editing. Whether you're an aspiring photographer, a budding filmmaker, or simply someone with a passion for visual storytelling, this course promises to equip you with the knowledge and skills to create compelling images and videos that leave a lasting impression.
+    </p>
+    <h3><u>Course Overview:</u></h3>
+    <p>
+      In this course, we will cover a wide array of topics spanning both photography and video editing, including:
+    </p>
+    <p>
+      1. Photography Fundamentals: We will begin by exploring the core principles of photography, including composition, lighting, exposure, and camera settings. Understanding these fundamentals is essential for capturing captivating images that communicate your vision effectively.
+    </p>
+    <p>
+      2. Camera Techniques and Equipment: From DSLRs and mirrorless cameras to smartphones and drones, the world of photography offers a plethora of tools for capturing images. We will discuss different types of cameras and lenses, as well as essential accessories and techniques for achieving professional-quality results.
+    </p>
+    <p>
+      3. Creative Vision and Storytelling: Photography is more than just technical proficiency; it's about expressing your unique perspective and telling stories through images. We will delve into the art of visual storytelling, exploring techniques for conveying emotions, narratives, and messages through your photographs.
+    </p>
+    <p>
+      4. Introduction to Video Production: In addition to still photography, we will also explore the exciting realm of video production. We will cover the basics of camera operation, shot composition, and visual storytelling techniques specific to the medium of video.
+    </p>
+    <p>
+      5. Video Editing Fundamentals: Once you've captured your footage, the real magic happens in the editing room. We will introduce you to popular video editing software and teach you essential editing techniques, including cutting, transitions, color grading, and audio manipulation, to bring your videos to life.
+    </p>
+    <p>
+      6. Advanced Editing Techniques: Beyond the basics, we will explore advanced video editing techniques, such as visual effects, motion graphics, and animation, to take your videos to the next level of creativity and professionalism.
+    </p>
+    <p>
+      7. Workflow Optimization and Project Management: Efficient workflow and project management are crucial for success in photography and video production. We will discuss strategies for organizing your files, optimizing your editing workflow, and managing projects effectively to maximize productivity and creativity.
+    </p>
+    <h3><u>Course Objectives:</u></h3>
+    <p>
+      By the end of this course, you will:
+    </p>
+    <p><li>Gain a comprehensive understanding of photography and video production fundamentals, including camera operation, composition, lighting, and storytelling techniques.</li></p>
+    <p><li>Acquire practical skills in capturing stunning images and videos using a variety of cameras and equipment.</li></p>
+    <p><li>Develop proficiency in using popular photography and video editing software to edit and enhance your visuals.</li></p>
+    <p><li>Learn advanced editing techniques to add polish, creativity, and professionalism to your projects.</li></p>
+    <p><li>Cultivate a discerning eye for visual aesthetics and storytelling, enabling you to create compelling images and videos that resonate with your audience.</li></p>
+    <p><li>Master workflow optimization and project management strategies to streamline your creative process and maximize efficiency.</li></p>
+    <h3><u>Prerequisites:</u></h3>
+    <p>This course is designed for beginners with little to no prior experience in photography or video editing. Whether you're a complete novice or someone looking to refine your skills, this course offers a supportive learning environment to help you achieve your creative goals. All you need is a passion for visual storytelling and a willingness to learn!</p>
+    <h3><u>Conclusion:</u></h3>
+    <p>Photography and video editing are powerful mediums for expressing creativity, capturing moments, and telling stories that inspire, inform, and entertain. Whether you dream of becoming a professional photographer, a filmmaker, or simply want to enhance your creative expression, this course provides the perfect starting point for your journey. Join us as we embark on this exciting adventure together, exploring the boundless possibilities of photography and video editing. Let's unleash our creativity and bring our visions to life one frame at a time!</p>
+  <section class="content">
+    <div class="card">
+      <img
+        src="https://asapkerala.gov.in/wp-content/uploads/2021/09/Artificial-Intelligence.jpg"
+        alt="Service 3"
+        />
+        <a href="#"> <h3>Course 3 - AI & ML</h3></a>
+      <p>
+          Here we learn about AI & ML and building projects on various
+          topics.....
+      </p>
+      </div>
+    </section>
+  <div class="intro3">
+    <h2><u> Artificial Intelligence & Machine Learning</u></h2>
+    <p>Welcome to the fascinating world of Artificial Intelligence (AI) and Machine Learning (ML)! In this course, we will embark on an exciting journey through the realms of intelligent systems and algorithms that are revolutionizing industries, shaping our daily lives, and redefining what it means to be human. Whether you're a curious enthusiast, a budding data scientist, or an industry professional seeking to stay ahead of the curve, this course promises to provide you with a solid foundation in AI and ML concepts, techniques, and applications.</p>
+    <h3><u>Course Overview:</u></h3>
+    <p>In this course, we will cover a wide range of topics in AI and ML, including:</p>
+    <p>1. Introduction to Artificial Intelligence: We will start by exploring the fascinating field of Artificial Intelligence, understanding its history, definitions, and core concepts. From symbolic AI to modern approaches like machine learning and deep learning, we will examine the evolution of AI and its impact on society.</p>
+    <p>2. Machine Learning Fundamentals: Machine Learning lies at the heart of AI, enabling computers to learn from data and make predictions or decisions without explicit programming. We will delve into the fundamentals of machine learning, including supervised, unsupervised, and reinforcement learning techniques, as well as evaluation metrics and best practices.</p>
+    <p>3. Data Preprocessing and Feature Engineering: High-quality data is essential for training robust machine learning models. We will discuss techniques for preprocessing and cleaning data, as well as feature engineering methods to extract meaningful information from raw data, optimizing model performance.</p>
+    <p>4. Supervised Learning Algorithms: In supervised learning, models learn from labeled data to make predictions or classifications. We will explore popular supervised learning algorithms such as linear regression, logistic regression, decision trees, support vector machines, and neural networks, understanding their strengths, weaknesses, and real-world applications.</p>
+    <p>5. Unsupervised Learning and Clustering: Unsupervised learning algorithms uncover hidden patterns and structures in unlabeled data. We will delve into clustering algorithms such as K-means clustering, hierarchical clustering, and density-based clustering, exploring their use cases in data analysis and segmentation.</p>
+    <p>6. Deep Learning and Neural Networks: Deep Learning has revolutionized the field of AI, enabling machines to learn complex patterns from large-scale data. We will introduce you to neural networks, deep learning architectures, and popular frameworks like TensorFlow and PyTorch, empowering you to build and train deep learning models for a variety of tasks, including image recognition, natural language processing, and more.</p>
+    <p>7. Model Evaluation and Deployment: Once you've trained your machine learning models, it's essential to evaluate their performance and deploy them into production environments. We will discuss techniques for model evaluation, validation, and deployment, ensuring that your models deliver accurate and reliable results in real-world scenarios.</p>
+    <h3><u>Course Objectives:</u></h3>
+    <p>By the end of this course, you will:</p>
+    <p><li>Develop a comprehensive understanding of Artificial Intelligence and Machine Learning concepts, algorithms, and applications.</li></p>
+    <p><li>Acquire practical skills in data preprocessing, feature engineering, model training, and evaluation using popular machine learning libraries and frameworks.</li></p>
+    <p><li>Gain hands-on experience in building and deploying machine learning models for real-world problems, from classification and regression to clustering and deep learning.</li></p>
+    <p><li>Learn best practices and techniques for optimizing model performance, interpreting results, and deploying AI solutions into production environments.</li></p>
+    <p><li>Explore cutting-edge research and emerging trends in AI and ML, equipping you with the knowledge and insights to stay at the forefront of this rapidly evolving field.</li></p>
+    <h3><u>Prerequisites:</u></h3>
+    <p>This course is designed for individuals with a basic understanding of programming and mathematics. While prior experience in AI or ML is not required, familiarity with concepts such as linear algebra, calculus, and programming languages like Python will be beneficial. A passion for learning and a curiosity about the possibilities of Artificial Intelligence are the only prerequisites for success in this course.</p>
+    <h3><u>Conclusion:</u></h3>
+    <p>Artificial Intelligence and Machine Learning represent some of the most transformative technologies of our time, with the potential to revolutionize industries, solve complex problems, and improve lives. Whether you're interested in building intelligent systems, analyzing data, or innovating new AI applications, this course offers an exciting opportunity to dive into the world of AI and ML, discover its boundless possibilities, and unleash your creative potential. Join us on this thrilling journey as we explore the frontiers of AI and ML, and together, let's shape the future of technology and humanity.</p>
+    </div>
+    <footer>
+      <div class="underline"></div>
+      <div class="list">
+        <ul>
+          <a href="help.html">HELP</a>
+        </ul>
+        <ul>
+          <a href="support.html">SUPPORT</a>
+        </ul>
+        <ul>
+          <a href="feedback.html">FEEDBACK</a>
+        </ul>
+        <ul>
+          <a href="tac.html">TERMS & CONDITION</a>
+        </ul>
+        <ul>
+          <a href="pp.html">PRIVACY POLICY</a>
+        </ul>
+      </div>
+      <div class="box10">
+        <p>Copyright © 2024 CodeWithHunter.com</p>
+      </div>
+    </footer>
+  </body>
+</html>

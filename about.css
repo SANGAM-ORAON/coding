@@ -1,0 +1,86 @@
+body {
+    font-family: 'Genos', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: darkgrey;
+    position: sticky;
+    z-index: 1;
+    top: 0;
+}
+
+header {
+    display: inline-flex;
+    margin: 0;
+}
+header>h1>a{
+    text-decoration: none;
+    position: relative;
+    left: 25px;
+}
+nav {
+    position: sticky;
+    display: inline-flex;
+    position: relative;
+    left: 1040px;
+    bottom: -15px;
+}
+a {
+    color: black;
+    display: inline-flex;
+}
+.search{
+    position: relative;
+    left: 670px;
+}
+.about>h1 {
+   margin: 20px;
+}
+.line1 {
+    border: solid 2px black;
+    color: ghostwhite;
+}
+
+.line2 {
+    display: inline-flex;
+}
+.line2>ul>a:hover{
+    color:rgb(89, 89, 90)
+}
+nav>ul>a:hover{
+    color:rgb(89, 89, 90)
+}
+.list>ul>a:hover{
+    color:rgb(89, 89, 90)
+}
+.search>ul>a:hover{
+    color:rgb(89, 89, 90)
+}
+h2{
+    margin:5px ;
+    padding: 10px;
+}
+p{
+    margin:5px ;
+    padding: 10px;
+}
+
+.list{
+    display: inline-flex;
+    position: relative;
+    left: 450px;
+}
+.box10 {
+    text-align: center;
+}
+.underline{
+    border: 2px solid gray;
+}
+footer{
+    padding: 0px 8px;
+}
+h3{
+    padding:15px;
+}
