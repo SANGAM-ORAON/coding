@@ -1,0 +1,230 @@
+body {
+    font-family: 'Genos', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: darkgrey;
+    position: sticky;
+    z-index: 1;
+    top: 0;
+}
+header>h1>a{
+    text-decoration: none;
+}
+header {
+    display: inline-flex;
+    margin: 0;
+}
+
+nav {
+    position: sticky;
+    display: inline-flex;
+    position: relative;
+    left: 1040px;
+    bottom: -15px;
+}
+a {
+    color: black;
+    display: inline-flex;
+}
+.line2>ul>a:hover{
+    color:rgb(89, 89, 90)
+}
+nav>ul>a:hover{
+    color:rgb(89, 89, 90)
+}
+.list>ul>a:hover{
+    color:rgb(89, 89, 90)
+}
+.search>ul>a:hover{
+    color:rgb(89, 89, 90)
+}
+/*      banner          */
+
+
+.content {
+    background: url(https://media.istockphoto.com/id/1485939448/photo/data-processing-digital-technology-software-development-concept-computer-programmer-software.jpg?s=612x612&w=0&k=20&c=AMaqBgU79i_uPbJmGzoO9b_RoLwYpGwCaJsnTAsNPaY=) no-repeat 50%;
+    background-size: cover;
+    height: 470px;
+    display: inline-block;
+    width: 100%;
+}
+.content .content-width h1 {
+    font-size: 58px;
+    color: #464646;
+    text-align: center;
+    margin: 30px 0 0;
+}
+.content .content-width .content-text {
+    width: 419px;
+    font-size: 20px;
+    line-height: 1.4;
+    color: #313131;
+    margin-top: 40px;
+    padding: 20px;
+}
+.content-width>a{
+    padding: 10px;
+    text-decoration: none;
+    border: 2px solid gray;
+    border-radius: 20px;
+    background-color: rgb(129, 213, 240);
+    margin: 20px;
+}
+.textAndButton{
+text-align: center;
+}
+.textAndButton>a{
+    padding: 10px;
+    text-decoration: none;
+    border: 2px solid gray;
+    border-radius: 20px;
+    background-color: rgb(129, 213, 240);
+    margin: 20px;
+}
+.join.content{
+    background: url(https://files.123freevectors.com/wp-content/original/202824-plain-blue-and-white-background.jpg) no-repeat 50%;
+    background-size: cover;
+    height: 273px;
+    display: inline-block;
+    width: 100%;
+}
+.buttonAndHeader>h2{
+padding: 20px;
+color: rgb(17, 18, 19);
+}
+.buttonAndHeader>.button-container>a{
+    padding: 10px;
+    text-decoration: none;
+    /* border: 2px solid gray; */
+    border-radius: 20px;
+    background-color: aliceblue;
+    margin: 20px;
+}
+.page-width{
+    margin: 65px 45px;
+}
+.content-types.page-width{
+    /* border: 2px solid gray; */
+    display: flex;
+    margin: 100px;
+}
+.content-types.page-width>.content-type{
+    border: 2px solid gray;
+    border-radius: 20px;
+    margin: 0px 50px;
+    padding: 5px;
+    text-align: center;
+    height: 350px;
+    width: 600px;
+    background-color: rgb(215, 241, 250);
+}
+.content-header>img{
+    padding: 10px;
+}
+.pic{
+    border: 2px solid gray;
+    margin: 0px 0px 10px 0px;
+    padding: 10px;
+    text-decoration: none;
+    background-color: rgb(129, 213, 240);
+    border-radius: 20px;
+    margin: 50px;
+}
+.para{
+    text-align: center;
+    margin: 20px;
+    padding: 20px 20px 0px 20px;
+}
+.line{
+    border: 2px solid gray; 
+}
+.line1 {
+    border: solid 2px black;
+    color: ghostwhite;
+}
+
+.line2 {
+    display: inline-flex;
+}
+
+header>h1 {
+    position: relative;
+    left: 25px;
+}
+h1>u{
+    padding:0px 0px 0px 20px ;
+}
+.text1 {
+    height: 700px;
+}
+.box1{
+    width: 740px;
+    height: 500px;
+    padding: 0px 0px 0px 20px;
+}
+video{
+    position: relative;
+    left: 800px;
+    bottom: 700px;
+    width: 700px;
+    border: 6px solid gray;
+    border-radius: 5px;
+}
+iframe{
+    position: relative;
+    left: 90px;
+    /* bottom: 200px; */
+    width: 690px;
+    height: 500px;
+    border-radius: 10px;
+}
+.search{
+    position: relative;
+    left: 670px;
+}
+.list
+{
+    display: inline-flex;
+    position: relative;
+    left: 450px;
+}
+
+.box10 {
+    text-align: center;
+}
+footer{
+    padding: 0px 8px;
+}
+.footer>img{
+    border-radius: 10px;
+    width: 1500px;
+    height: 200px;
+}
+    /* Style for the container */
+    .scroll-container {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    /* Style for the scrolling text */
+    .scroll-text{
+        white-space: nowrap;
+        animation: scroll-left 10s linear infinite; /* Adjust animation duration as needed */
+        color: darkgray; 
+    }
+    /* Animation for scrolling text */
+    @keyframes scroll-left {
+        0% { transform: translateX(100%); }
+        100% { transform: translateX(-100%); }
+    }
+    .recruiter{
+        text-align: center;
+    }
+    .space{
+   
+        margin: 10px;
+        padding: 30px;
+    }
